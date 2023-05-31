@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.PunchStandardMapper" >
+  <resultMap id="BaseResultMap" type="com.yrmjhtdjxh.punch.domain.PunchStandard" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="begin_date" property="beginDate" jdbcType="DATE" />
+    <result column="end_date" property="endDate" jdbcType="DATE" />
+    <result column="is_exe" property="isExe" jdbcType="BIT" />
+    <result column="stu_grade" property="stuGrade" jdbcType="INTEGER" />
+    <result column="lowest_standard" property="lowestStandard" jdbcType="DOUBLE" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from punch_standard
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.PunchStandard" >
+    insert into punch_standard (id, begin_date, end_date, 
+      is_exe, stu_grade, lowest_standard, description
+      )
+    values (#{id,jdbcType=INTEGER}, #{beginDate,jdbcType=DATE}, #{endDate,jdbcType=DATE}, 
+      #{isExe,jdbcType=BIT}, #{stuGrade,jdbcType=INTEGER}, #{lowestStandard,jdbcType=DOUBLE}, #{description,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yrmjhtdjxh.punch.domain.PunchStandard" >
+    update punch_standard
+    set begin_date = #{beginDate,jdbcType=DATE},
+      end_date = #{endDate,jdbcType=DATE},
+      is_exe = #{isExe,jdbcType=BIT},
+      stu_grade = #{stuGrade,jdbcType=INTEGER},
+      lowest_standard = #{lowestStandard,jdbcType=DOUBLE},
+      description = #{description,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, begin_date, end_date, is_exe, stu_grade, lowest_standard, description
+    from punch_standard
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, begin_date, end_date, is_exe, stu_grade, lowest_standard, description
+    from punch_standard
+  </select>
+
+  <select id="selectAllExe" resultMap="BaseResultMap" >
+    select id, begin_date, end_date, is_exe, stu_grade, lowest_standard, description
+    from punch_standard
+    where is_exe = 1
+  </select>
+
+  <select id="selectAllExe2" resultMap="BaseResultMap" >
+    select id, begin_date, end_date, is_exe, stu_grade, lowest_standard, description
+    from punch_standard
+    where is_exe = 2
+    and  stu_grade = #{stuGrade}
+  </select>
+
+  <select id="selectByGrade" parameterType="integer" resultType="java.lang.Integer">
+    select lowest_standard  from punch_standard where stu_grade = #{grade}
+  </select>
+
+  <update id="cancelPunchTime" parameterType="integer">
+    update punch_standard
+    set is_exe = 0
+    where id = #{id,jdbcType=INTEGER} and stu_grade = 5
+  </update>
+
+  <select id="selectAllVacation" resultMap="BaseResultMap" >
+    SELECT id, begin_date, end_date, is_exe, stu_grade, lowest_standard, description
+    FROM
+      punch_standard
+    WHERE
+      now() BETWEEN begin_date
+        AND end_date
+      AND is_exe = 1
+      AND stu_grade = #{grade,jdbcType=INTEGER}
+    LIMIT 2
+  </select>
+
+</mapper>

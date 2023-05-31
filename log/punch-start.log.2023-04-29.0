@@ -1,0 +1,600 @@
+2023-04-29 14:58:08.408  INFO 1304 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on Kickflip with PID 1304 (D:\Project\punch\target\classes started by 30652 in D:\Project\punch)
+2023-04-29 14:58:08.412 DEBUG 1304 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2023-04-29 14:58:08.412  INFO 1304 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2023-04-29 14:58:08.476  INFO 1304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-29 14:58:08.476  INFO 1304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 14:58:09.591  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 14:58:09.591  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 14:58:09.628  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2023-04-29 14:58:09.641  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 14:58:09.642  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 14:58:09.655  INFO 1304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2023-04-29 14:58:09.994  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd4fd164] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.095  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$65fd999e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.101  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.104  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@23b069c3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.105  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8ad23c50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.113  INFO 1304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 14:58:10.583  INFO 1304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-29 14:58:10.602  INFO 1304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-29 14:58:10.602  INFO 1304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2023-04-29 14:58:10.746  INFO 1304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-29 14:58:10.746  INFO 1304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2269 ms
+2023-04-29 14:58:11.366 DEBUG 1304 --- [restartedMain] c.y.p.s.JwtAuthenticationTokenFilter     : Filter 'authenticationTokenFilterBean' configured for use
+2023-04-29 14:58:12.004  INFO 1304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 14:58:12.070  WARN 1304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-29 14:58:12.764  INFO 1304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59f2982f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5765b879, org.springframework.security.web.header.HeaderWriterFilter@2114fcdd, org.springframework.security.web.authentication.logout.LogoutFilter@7d2453c3, com.yrmjhtdjxh.punch.security.JwtAuthenticationTokenFilter@5c3e3b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11090bcb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d300217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fc6a80c, org.springframework.security.web.session.SessionManagementFilter@13a1a386, org.springframework.security.web.access.ExceptionTranslationFilter@2c1846a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@753e85b5]
+2023-04-29 14:58:13.197  INFO 1304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-29 14:58:13.200  INFO 1304 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 5.185 seconds (JVM running for 7.644)
+2023-04-29 15:00:42.449  INFO 1304 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:00:58.061  INFO 4956 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on Kickflip with PID 4956 (D:\Project\punch\target\classes started by 30652 in D:\Project\punch)
+2023-04-29 15:00:58.063 DEBUG 4956 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2023-04-29 15:00:58.063  INFO 4956 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2023-04-29 15:00:58.115  INFO 4956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-29 15:00:58.115  INFO 4956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 15:00:59.184  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:00:59.185  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:00:59.205  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2023-04-29 15:00:59.212  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:00:59.212  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:00:59.222  INFO 4956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2023-04-29 15:00:59.520  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44bf6553] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.603  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$dd6d2d8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.607  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.610  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@36efea4b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.611  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$241d03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.618  INFO 4956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:00:59.994  INFO 4956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-29 15:01:00.009  INFO 4956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-29 15:01:00.010  INFO 4956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2023-04-29 15:01:00.139  INFO 4956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-29 15:01:00.139  INFO 4956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2024 ms
+2023-04-29 15:01:01.106 DEBUG 4956 --- [restartedMain] c.y.p.s.JwtAuthenticationTokenFilter     : Filter 'authenticationTokenFilterBean' configured for use
+2023-04-29 15:01:01.439  INFO 4956 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-04-29 15:01:01.723  INFO 4956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:01:01.778  WARN 4956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-29 15:01:01.966  INFO 4956 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-04-29 15:01:02.153  INFO 4956 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19eeb9ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@385054d6, org.springframework.security.web.header.HeaderWriterFilter@556d9dad, org.springframework.security.web.authentication.logout.LogoutFilter@5166ac4d, com.yrmjhtdjxh.punch.security.JwtAuthenticationTokenFilter@7b3c291b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ee44eaa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b013211, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@364a14d3, org.springframework.security.web.session.SessionManagementFilter@7c71b0c0, org.springframework.security.web.access.ExceptionTranslationFilter@47e275c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@572fe3ce]
+2023-04-29 15:01:02.710  INFO 4956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-29 15:01:02.712  INFO 4956 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 5.001 seconds (JVM running for 7.111)
+2023-04-29 15:01:02.956  INFO 4956 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4a1433deb64d
+2023-04-29 15:01:03.046  INFO 4956 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 15:01:03.046  INFO 4956 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-29 15:01:03.057  INFO 4956 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2023-04-29 15:01:03.068  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:03.076  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:03.084  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:03.180  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator
+2023-04-29 15:01:03.180  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:03.180  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:03.189  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.247  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.248  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.248  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.249  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.249  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.250  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.250  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.251  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.251  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.252  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.252  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.253  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.253  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.254  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.254  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.255  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.255  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.256  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.257  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.257  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:01:03.272  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:01:03.272  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:03.273  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:11.298  INFO 4956 --- [RMI TCP Connection(1)-192.168.56.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-04-29 15:01:11.525  INFO 4956 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-04-29 15:01:11.526  INFO 4956 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-04-29 15:01:16.322  WARN 4956 --- [parallel-1] o.s.b.a.r.RedisReactiveHealthIndicator   : Redis health check failed
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1112)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1091)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:882)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:91)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:90)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:50)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:3948)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:59)
+Error has been observed by the following operator(s):
+	|_	Mono.subscribeOn ⇢ org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:59)
+	|_	Mono.flatMap ⇢ org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:49)
+
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:235)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:204)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1110)
+	... 15 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2023-04-29 15:01:17.116  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:17.116  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:17.116  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:37.114  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:37.114  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:37.115  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:40.491  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:40.491  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:01:40.491  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:40.492  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:45.276  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /
+2023-04-29 15:01:45.277  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:45.353  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /favicon.ico
+2023-04-29 15:01:45.353  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:48.429  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /
+2023-04-29 15:01:48.430  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:57.121  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:57.121  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:57.122  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:57.979  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /
+2023-04-29 15:01:57.979  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:59.925  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:01:59.925  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:01:59.926  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:59.926  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:59.926  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:59.926  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:01:59.927  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:01:59.927  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:01:59.928  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:06.395  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:02:06.396  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:06.396  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:07.014  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:02:07.015  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/env
+2023-04-29 15:02:07.015  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:07.016  INFO 4956 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:07.114  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:02:07.115  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:07.115  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:07.481  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/beans
+2023-04-29 15:02:07.481  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:07.481  INFO 4956 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:08.442  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/configprops
+2023-04-29 15:02:08.442  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:08.443  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:08.938  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/scheduledtasks
+2023-04-29 15:02:08.939  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:08.939  INFO 4956 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:09.680  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/logfile
+2023-04-29 15:02:09.680  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:09.680  INFO 4956 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:11.709  INFO 4956 --- [http-nio-8090-exec-12] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/jolokia/list
+2023-04-29 15:02:11.710  INFO 4956 --- [http-nio-8090-exec-12] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:11.710  INFO 4956 --- [http-nio-8090-exec-12] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:13.350  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/dump
+2023-04-29 15:02:13.350  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:13.351  INFO 4956 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:14.758  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:02:14.758  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-13] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-13] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-13] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:14.759  INFO 4956 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:17.121  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:02:17.121  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:17.122  INFO 4956 --- [http-nio-8090-exec-11] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:37.107  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:02:37.108  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:37.108  INFO 4956 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:02:57.120  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:02:57.121  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:02:57.121  INFO 4956 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:03:07.126  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:03:07.126  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:03:07.126  INFO 4956 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:03:11.490  INFO 4956 --- [Thread-15] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-04-29 15:03:11.491  INFO 4956 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:03:12.642  INFO 4956 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-04-29 15:03:51.041  INFO 24776 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on Kickflip with PID 24776 (D:\Project\punch\target\classes started by 30652 in D:\Project\punch)
+2023-04-29 15:03:51.044 DEBUG 24776 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2023-04-29 15:03:51.044  INFO 24776 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2023-04-29 15:03:51.093  INFO 24776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-29 15:03:51.094  INFO 24776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 15:03:52.121  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:03:52.121  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:03:52.142  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2023-04-29 15:03:52.148  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:03:52.149  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:03:52.158  INFO 24776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2023-04-29 15:03:52.465  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$748d6546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.551  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$d3b2d80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.556  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.560  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@421bb863' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.562  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$320fd032] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.569  INFO 24776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:03:52.963  INFO 24776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-29 15:03:52.978  INFO 24776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-29 15:03:52.978  INFO 24776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2023-04-29 15:03:53.108  INFO 24776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-29 15:03:53.108  INFO 24776 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2014 ms
+2023-04-29 15:03:54.035  INFO 24776 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2023-04-29 15:03:54.049 DEBUG 24776 --- [restartedMain] c.y.p.s.JwtAuthenticationTokenFilter     : Filter 'authenticationTokenFilterBean' configured for use
+2023-04-29 15:03:54.392  INFO 24776 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-04-29 15:03:54.695  INFO 24776 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:03:54.756  WARN 24776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-29 15:03:54.956  INFO 24776 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-04-29 15:03:55.138  INFO 24776 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ce19b97, org.springframework.security.web.context.SecurityContextPersistenceFilter@7be7c854, org.springframework.security.web.header.HeaderWriterFilter@3737033b, org.springframework.security.web.authentication.logout.LogoutFilter@3d8e54d9, com.yrmjhtdjxh.punch.security.JwtAuthenticationTokenFilter@60955754, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13f5ea7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fb0401c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45cb7e6c, org.springframework.security.web.session.SessionManagementFilter@183fd87b, org.springframework.security.web.access.ExceptionTranslationFilter@1c943bca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@559b0e85]
+2023-04-29 15:03:55.683  INFO 24776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-29 15:03:55.686  INFO 24776 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.972 seconds (JVM running for 7.071)
+2023-04-29 15:03:55.773  INFO 24776 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4a1433deb64d
+2023-04-29 15:03:55.796  INFO 24776 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 15:03:55.796  INFO 24776 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-29 15:03:55.805  INFO 24776 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-04-29 15:03:55.814  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:03:55.820  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:03:55.828  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:03:55.885  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator
+2023-04-29 15:03:55.885  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:03:55.886  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:03:55.886  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:03:55.886  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:03:55.886  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:03:55.891  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.893  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.925  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.925  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.926  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.926  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.926  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.928  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.931  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.931  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.932  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.933  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.933  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.933  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.935  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.935  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.936  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.936  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.936  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:55.936  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:03:57.507  INFO 24776 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2023-04-29 15:03:57.560  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:04:01.849  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:04:01.849  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:01.850  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:01.852  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:04:01.853  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:01.853  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:01.856  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:01.856  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:01.856  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:04.400  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:04:04.400  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:04.401  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:04.401  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:04:04.402  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:04.402  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:04.404  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:04.404  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:04.405  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:04.678  INFO 24776 --- [RMI TCP Connection(2)-192.168.56.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-04-29 15:04:04.866  INFO 24776 --- [parallel-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-04-29 15:04:04.867  INFO 24776 --- [parallel-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-04-29 15:04:07.120  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:07.120  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:07.121  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:09.624  WARN 24776 --- [parallel-1] o.s.b.a.r.RedisReactiveHealthIndicator   : Redis health check failed
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1112)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1091)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:882)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:91)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:90)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:50)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:3948)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:59)
+Error has been observed by the following operator(s):
+	|_	Mono.subscribeOn ⇢ org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:59)
+	|_	Mono.flatMap ⇢ org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:49)
+
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:235)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:204)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1110)
+	... 15 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2023-04-29 15:04:15.239  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:04:15.239  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:04:15.239  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:15.239  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:15.239  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:15.240  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:15.243  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:15.244  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:15.244  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:16.410  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:04:16.410  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:16.411  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:17.121  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/env
+2023-04-29 15:04:17.121  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:04:17.121  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:17.122  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:27.114  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:27.114  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:27.114  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:27.634  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/beans
+2023-04-29 15:04:27.634  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:27.634  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:28.369  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/configprops
+2023-04-29 15:04:28.369  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:28.370  INFO 24776 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:30.498  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/scheduledtasks
+2023-04-29 15:04:30.499  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:30.499  INFO 24776 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:31.157  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/logfile
+2023-04-29 15:04:31.157  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:31.157  INFO 24776 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:32.081  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/jolokia/list
+2023-04-29 15:04:32.081  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:32.082  INFO 24776 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:32.747  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/auditevents
+2023-04-29 15:04:32.747  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:32.748  INFO 24776 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:33.494  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/flyway
+2023-04-29 15:04:33.494  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:33.494  INFO 24776 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:34.330  INFO 24776 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:34.334  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:34.334  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:34.335  INFO 24776 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:47.109  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:04:47.109  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:04:47.110  INFO 24776 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:04:49.618  INFO 24776 --- [Thread-15] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-04-29 15:04:49.619  INFO 24776 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:04:50.771  INFO 24776 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-04-29 15:05:07.084  INFO 15940 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on Kickflip with PID 15940 (D:\Project\punch\target\classes started by 30652 in D:\Project\punch)
+2023-04-29 15:05:07.086 DEBUG 15940 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2023-04-29 15:05:07.086  INFO 15940 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2023-04-29 15:05:07.143  INFO 15940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-29 15:05:07.143  INFO 15940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 15:05:08.061  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:05:08.062  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:05:08.086  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2023-04-29 15:05:08.095  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:05:08.096  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:05:08.115  INFO 15940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2023-04-29 15:05:08.404  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a26380ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.494  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3b1148e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.498  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.502  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1b63d99c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.504  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5fe5eb98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.512  INFO 15940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:05:08.894  INFO 15940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-29 15:05:08.907  INFO 15940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-29 15:05:08.907  INFO 15940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2023-04-29 15:05:09.029  INFO 15940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-29 15:05:09.029  INFO 15940 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1885 ms
+2023-04-29 15:05:09.579 DEBUG 15940 --- [restartedMain] c.y.p.s.JwtAuthenticationTokenFilter     : Filter 'authenticationTokenFilterBean' configured for use
+2023-04-29 15:05:10.111  INFO 15940 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:05:10.155  WARN 15940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-29 15:05:10.695  INFO 15940 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ad255a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@15e9ec96, org.springframework.security.web.header.HeaderWriterFilter@5cfbb1d9, org.springframework.security.web.authentication.logout.LogoutFilter@752f5054, com.yrmjhtdjxh.punch.security.JwtAuthenticationTokenFilter@3bd95046, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6768caee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c222fa7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e62d94e, org.springframework.security.web.session.SessionManagementFilter@30b1b65c, org.springframework.security.web.access.ExceptionTranslationFilter@16c359cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5abe8b43]
+2023-04-29 15:05:11.049  INFO 15940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-29 15:05:11.052  INFO 15940 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.328 seconds (JVM running for 6.425)
+2023-04-29 15:05:16.944  INFO 15940 --- [http-nio-8090-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 15:05:16.944  INFO 15940 --- [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-29 15:05:16.952  INFO 15940 --- [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-04-29 15:05:16.965  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:05:16.965  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:05:16.965  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:05:16.973  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:16.973  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:16.973  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:16.983  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:16.983  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:16.983  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:17.107  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:05:17.107  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:17.107  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:17.110  INFO 15940 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator
+2023-04-29 15:05:17.111  INFO 15940 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:17.111  INFO 15940 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:17.112  INFO 15940 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:05:17.112  INFO 15940 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:17.113  INFO 15940 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:17.117  INFO 15940 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.118  INFO 15940 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.122  INFO 15940 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.123  INFO 15940 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.124  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.126  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.127  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.128  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.129  INFO 15940 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.130  INFO 15940 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.132  INFO 15940 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.133  INFO 15940 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.134  INFO 15940 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.135  INFO 15940 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.137  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.138  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.139  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.140  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.141  INFO 15940 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.143  INFO 15940 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:17.143  INFO 15940 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:22.785  INFO 15940 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:05:22.785  INFO 15940 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:22.786  INFO 15940 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:22.789  INFO 15940 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:05:22.789  INFO 15940 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:22.790  INFO 15940 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:22.792  INFO 15940 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:05:22.792  INFO 15940 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:22.792  INFO 15940 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:24.518  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:05:24.519  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:24.519  INFO 15940 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:25.965  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/env
+2023-04-29 15:05:25.965  INFO 15940 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:05:25.966  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:25.966  INFO 15940 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:27.120  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:05:27.120  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:05:27.121  INFO 15940 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:05:34.294  INFO 15940 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:05:59.218  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on Kickflip with PID 14316 (D:\Project\punch\target\classes started by 30652 in D:\Project\punch)
+2023-04-29 15:05:59.220 DEBUG 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2023-04-29 15:05:59.221  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2023-04-29 15:05:59.276  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-29 15:05:59.276  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-29 15:06:00.035  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:06:00.036  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:06:00.062  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2023-04-29 15:06:00.070  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-29 15:06:00.070  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-04-29 15:06:00.081  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2023-04-29 15:06:00.354  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$92e63fbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.434  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2b9407f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.439  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.442  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7f1e664e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.444  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5068aaaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.451  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-29 15:06:00.809  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-04-29 15:06:00.823  INFO 14316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-29 15:06:00.823  INFO 14316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2023-04-29 15:06:00.942  INFO 14316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-29 15:06:00.942  INFO 14316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1666 ms
+2023-04-29 15:06:01.514 DEBUG 14316 --- [restartedMain] c.y.p.s.JwtAuthenticationTokenFilter     : Filter 'authenticationTokenFilterBean' configured for use
+2023-04-29 15:06:02.082  INFO 14316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-29 15:06:02.124  WARN 14316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-04-29 15:06:02.637  INFO 14316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b8dbebd, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c62af0f, org.springframework.security.web.header.HeaderWriterFilter@1272d104, org.springframework.security.web.authentication.logout.LogoutFilter@5a260c75, com.yrmjhtdjxh.punch.security.JwtAuthenticationTokenFilter@17d7198c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52a78d73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f23e906, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63dfc7f0, org.springframework.security.web.session.SessionManagementFilter@10733ba2, org.springframework.security.web.access.ExceptionTranslationFilter@7d9cb9aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32b29a48]
+2023-04-29 15:06:02.967  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-04-29 15:06:02.970  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.048 seconds (JVM running for 5.997)
+2023-04-29 15:06:07.146  INFO 14316 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-29 15:06:07.146  INFO 14316 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-29 15:06:07.153  INFO 14316 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-04-29 15:06:07.164  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:06:07.170  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:07.177  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:07.231  INFO 14316 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator
+2023-04-29 15:06:07.231  INFO 14316 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:06:07.231  INFO 14316 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:07.231  INFO 14316 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:07.232  INFO 14316 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:07.232  INFO 14316 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:07.235  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.256  INFO 14316 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.256  INFO 14316 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.257  INFO 14316 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.258  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.259  INFO 14316 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.259  INFO 14316 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.259  INFO 14316 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.259  INFO 14316 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.260  INFO 14316 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.261  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.261  INFO 14316 --- [http-nio-8090-exec-4] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.261  INFO 14316 --- [http-nio-8090-exec-10] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.261  INFO 14316 --- [http-nio-8090-exec-5] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:07.261  INFO 14316 --- [http-nio-8090-exec-2] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:15.547  INFO 14316 --- [http-nio-8090-exec-6] c.y.p.s.JwtAuthenticationTokenFilter     : 浏览器的请求预处理
+2023-04-29 15:06:15.547  INFO 14316 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/env
+2023-04-29 15:06:15.548  INFO 14316 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:15.548  INFO 14316 --- [http-nio-8090-exec-7] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:16.444  INFO 14316 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/metrics
+2023-04-29 15:06:16.444  INFO 14316 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:16.445  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/info
+2023-04-29 15:06:16.445  INFO 14316 --- [http-nio-8090-exec-8] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:16.445  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:16.445  INFO 14316 --- [http-nio-8090-exec-1] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:16.449  INFO 14316 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:06:16.449  INFO 14316 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:16.449  INFO 14316 --- [http-nio-8090-exec-9] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:06:27.111  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : requestURI: /actuator/health
+2023-04-29 15:06:27.112  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationTokenFilter     : checking authentication for user null
+2023-04-29 15:06:27.112  INFO 14316 --- [http-nio-8090-exec-3] c.y.p.s.JwtAuthenticationEntryPoint      : 需要身份认证:{}
+2023-04-29 15:07:27.652  INFO 14316 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

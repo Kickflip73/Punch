@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.PunchRecordMapper">
+
+    <select id="findByStudentID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        SELECT * FROM punchrecord WHERE studentID = #{studentID} AND recordTime > 0 ORDER BY beginPunchTime DESC
+    </select>
+
+    <!--根据学号查询今天的打卡时间-->
+    <select id="getTodayByStudentID" resultType="Double">
+        SELECT SUM(recordTime)
+        FROM punchrecord
+        WHERE studentID = #{studentID} AND recordTime > 0
+        AND  date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d');
+    </select>
+    <delete id="deleteById" >
+        delete from punchrecord where id = #{id}
+    </delete>
+
+    <!--<，&符号需要转义-->
+    <select id="getWeekByStudentID" resultType="Double">
+        SELECT SUM(recordTime)
+        FROM punchrecord
+        WHERE date_format(date, '%Y-%m-%d') &gt;= #{beginTime}
+        AND date_format(date, '%Y-%m-%d')  &lt;=  #{endTime}
+        AND studentID = #{studentID} and recordTime > 0 ;
+    </select>
+
+    <!--新增一条打卡记录-->
+    <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        INSERT INTO
+            punchrecord
+            (id, studentID, beginPunchTime, endPunchTime, recordTime, date)
+        VALUES
+            (#{id}, #{studentID}, #{beginPunchTime}, #{endPunchTime}, #{recordTime}, #{date});
+    </insert>
+
+    <!--根据学生ID查看没有完成的打卡记录-->
+    <select id="getUnfinishedPunchByStudentID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        SELECT id, studentID, beginPunchTime, endPunchTime, recordTime, date
+        FROM punchrecord
+        WHERE studentID = #{studentID}
+        AND recordTime = 0
+    </select>
+    <select id="getChartByTimeAndUser" resultType="com.yrmjhtdjxh.punch.VO.TimeRecordVO">
+        SELECT  date_format(refer.date, '%Y-%m-%d') AS date,
+        IFNULL( sum( round( recordTime, 2 ) ), 0.00 ) AS totalHourOfOneDay
+        FROM
+        (
+            SELECT
+            adddate( DATE_FORMAT(#{start},'%Y-%m-%d'), numlist.id ) AS 'date'
+            FROM
+                (
+                SELECT
+                n1.i + n10.i * 10 + n100.i * 100 AS id
+                FROM
+                num n1
+                CROSS JOIN num AS n10
+                CROSS JOIN num AS n100
+                ) AS numlist
+            WHERE  adddate( DATE_FORMAT( #{start}, '%Y-%m-%d' ) , numlist.id ) &lt;= DATE_FORMAT(#{end},'%Y-%m-%d')
+        ) refer
+        LEFT JOIN punchrecord p ON refer.date = DATE_FORMAT( p.date, '%Y-%m-%d' )  AND p.studentID = #{userId}
+        GROUP BY
+            refer.date
+        ORDER BY
+            refer.date
+
+    </select>
+
+    <!--结束打卡，更新数据库中那一条数据-->
+    <update id="endPunchRecord" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        UPDATE  punchrecord
+        SET endPunchTime = #{endPunchTime},recordTime = #{recordTime}
+        WHERE studentID = #{studentID}
+        AND recordTime = 0
+        AND endPunchTime = #{beginPunchTime};
+    </update>
+
+    <delete id="deleteByStudentID" >
+        DELETE FROM punchrecord
+        WHERE studentID = #{studentID} AND recordTime = 0;
+    </delete>
+
+    <select id="getAllCharting" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        SELECT id, studentID, beginPunchTime, endPunchTime, recordTime, date
+        FROM punchrecord
+        WHERE recordTime = 0;
+    </select>
+
+    <select id="getPunchedTimeAll" resultType="com.yrmjhtdjxh.punch.VO.PunchedTimeVO">
+
+        SELECT
+            students.NAME AS name,
+            students.grade AS grade,
+            IFNULL( totalTime, 0.00 ) as totalTime
+        FROM
+            students
+                LEFT JOIN (
+                SELECT
+                    studentID,
+                    round( sum( IFNULL( punchrecord.recordTime, 0.00 )), 2 ) AS totalTime
+                FROM
+                    punchrecord
+                WHERE
+                    punchrecord.date BETWEEN DATE_FORMAT( #{beginDate}, '%Y-%m-%d' )
+                        AND DATE_FORMAT( #{endDate}, '%Y-%m-%d' )
+                GROUP BY
+                    punchrecord.studentID
+            ) AS time ON students.studentID = time.studentID
+        ORDER BY totalTime DESC
+    </select>
+</mapper>
