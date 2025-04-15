@@ -119,8 +119,8 @@ src/main/java/com/yrmjhtdjxh/punch/
 
 ## 联系我们
 
-- 项目负责人：[联系方式]
-- 技术支持：[支持邮箱]
+- 项目负责人：刘煜燃[3065242502]
+- 技术支持：[3065242502@qq.com]
 
 ---
 © 2023 创数据实验室. All Rights Reserved.
